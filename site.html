@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WHITE ROSE GYM</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="TopBar">
+       <a class="navbar" href="#home">Home</a>
+       <a class="navbar" href="#products">Exercise</a>
+       <a class="navbar" href="#account">Account</a>
+       <a class="navbar" href="#about">About</a>
+      </div>
+
+      <header id="showcase">
+          <h1>Your Personal Trainer is Here</h1>
+          <p>Get Serious or Stay Home.</p>
+          <h3 class="button">Get In-touch Now To Begin Your Way To Fitness</h3>
+          <form action="" method="post">
+              {% csrf_token %}
+              {{ forms }}
+              <input type="submit" value="Submit"></input>
+          </form>
+        </header>
+
+  </body>
+</html>
