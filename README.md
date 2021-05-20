@@ -1,2 +1,2 @@
 # White-Rose-Gym-Landing-Page
-A landing page for a local gym, usind django, html and css.
+A landing page for a local gym, done using django, html and css.
